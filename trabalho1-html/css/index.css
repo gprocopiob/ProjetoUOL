@@ -37,9 +37,21 @@ p{
     height: 300px;
     align-content: center;
     vertical-align: center;
+    display: flex;
 
 }
 
 .images{
-    resize: 10%;
+    height: 225px;
+    width: 260px;
+}
+
+.espacamento {       
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.image-ajuste {
+display: block;
 }
