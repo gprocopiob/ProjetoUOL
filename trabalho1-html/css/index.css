@@ -1,3 +1,7 @@
+.divBranca{
+    margin: 0% 13% 0% 13%;
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -10,11 +14,12 @@ h1 {
 .AnuncioPrincipal{
     background: rgb(34,133,255);
     background: linear-gradient(90deg, rgba(34,133,255,1) 0%, rgba(49,44,175,1) 100%);
-    color: white;
-    margin: 0px 400px 0px 400px;
-    height: 200px;
-    padding: 40px;
+    color: white;    
+    height: 60%;
+    padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
+    vertical-align: center;
+    margin: 0% 13% 0% 13%;
 }
 
 h2{
@@ -27,15 +32,14 @@ p{
     padding: 0px 0px 0px 10px;
 }
 
-.cinza{
+.cinza{    
     background-color: rgb(222, 222, 222);
     height: 300px;
     align-content: center;
     vertical-align: center;
+
 }
 
-#015{
-    background-color: rgb(400, 400, 400);
-    text-align: center;
-    color: red;
+.images{
+    resize: 10%;
 }
