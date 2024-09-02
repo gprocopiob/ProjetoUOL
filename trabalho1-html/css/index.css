@@ -1,15 +1,16 @@
-/* --------- nav bar ---------*/
+/* --------- header bar ---------*/
 
-
-nav {
+header {
     border-bottom: 1px solid rgb(212, 212, 212);
     height: 3em;
     padding: 0% 13% 0% 13%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .uol_icon{
     height: 1.8em;
-    margin-right: 10em;
 }
 
 ul {
@@ -28,6 +29,10 @@ li {
     font-size: 0.8em;
 }
 
+.lista-buttons{
+    margin: 0%;
+}
+
 a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,7 +45,7 @@ i{
 
 button{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.6em;
+    font-size: 0.8em;
     background-color: white;
     border: none;
     font-weight: 600;
@@ -53,7 +58,7 @@ button{
 .btn-assine{
     background-color: rgb(255, 208, 0);
     border-radius: 0.5em;
-    padding: 0.7em 0.7em 0.7em 0.7em;
+    padding: 0.7em 1.3em 0.7em 1.3em;
     font-size: 0.5em;
 }
 
@@ -80,7 +85,6 @@ h1 {
     padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: center;
-    margin-top: 2em;
     
 }
 
@@ -101,6 +105,8 @@ p{
     vertical-align: center;
     display: flex;
     PADDING: 0% 13% 0% 13%;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -111,7 +117,8 @@ p{
 }
 
 .espacamento {       
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0% 13% 0% 13%;
 }
@@ -131,6 +138,5 @@ h5{
     font-size: 1em;
     line-height: 1.5em;
     margin: 0px;
-    color:rgb(29, 29, 29);
     font-weight: 300;
 }
