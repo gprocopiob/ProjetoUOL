@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UOL Notícias</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <!-- https://fontawesome.com/icons site dos icones -->
 </head>
@@ -20,7 +21,8 @@
         </div>
         <ul>
             <li>
-                <a href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
+                <a
+                    href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
             </li>
             <li>
                 <a href="https://noticias.uol.com.br/eleicoes/">Eleições</a>
@@ -41,12 +43,17 @@
                     <button class="btn-nav"><i class="fas fa-envelope"></i>EMAIL</button>
                 </li>
                 <li class="lista-buttons">
-                    <button class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
+                    <button id="btn-entre" class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
+                    <script>
+                        document.getElementById("btn-entre").onclick = function () {
+                            window.location.href = "login.html"; // Substitua "login.html" pelo caminho correto da página de login
+                        };
+                    </script>
                 </li>
                 <li class="lista-buttons">
                     <button class="btn-assine"><i class="fas fa-crown"></i>ASSINE UOL</button>
                 </li>
-            </ul> 
+            </ul>
         </div>
     </header>
     <div>
@@ -63,23 +70,24 @@
         <div class="image-ajuste">
             <img class="images"
                 src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-                <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
         </div>
         <div class="image-ajuste">
             <img class="images"
                 src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-                <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
         </div>
         <div class="image-ajuste">
             <img class="images"
                 src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-                <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
         </div>
         <div class="image-ajuste">
             <img class="images"
                 src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-                <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
         </div>
     </div>
 </body>
+
 </html>
