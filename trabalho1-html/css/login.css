@@ -1,5 +1,15 @@
-.quadrado {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
+.layout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+#wrapper {
+    width: 376px;
 }
