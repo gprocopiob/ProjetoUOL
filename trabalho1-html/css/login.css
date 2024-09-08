@@ -22,12 +22,11 @@ html, body {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    padding: 1px;
 }
 
 .layout {
     width: 100%;
-    height: 575.2px;
+    height: auto;
     background-color: #fff;
     border-radius: 8px;
     padding: 10px;
@@ -35,35 +34,199 @@ html, body {
 
 #CTA {
     display: flex;
-    -ms-flexbox: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 33px 20px;
+    padding: 15px 33px 10px;
     font-size: 16px;
     color: #444;
     width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
 }
 
 .CTA__logo {
-    text-align: unset;
-    font-size: 1px !important;
+    text-align: left;
     padding-bottom: 10px;
 }
 
 p {
-    flex-grow: 1;
     margin: 0;
+    color: #202020;
+    width: 100%;
 }
 
 #form {
+    width: 100%;
+    padding: 15px 33px 10px;
+}
+
+#form-single-step {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.margin-default {
+    display: block;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.description-input-user {
+    font-size: 12px;
+    color: #999;
+    margin-left: 8px;
+}
+
+input {
+    width: 78%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+button#button-submit {
+    background-color: rgb(255, 206, 0);
+    color: rgb(32, 32, 32);
+    margin-bottom: 20px;
+    padding: 7px 96.65px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button.btn-block {
+    display: block;
+    width: 78%;
+}
+
+button.btn-default {
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, .2);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-link {
+    color: #0070ab;
+    font-family: "UOLText";
+}
+
+a {
+    text-decoration: none;
+    color: #1082be;
+}
+
+.line-container {
     display: flex;
-    display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100%;
-    padding: 20px 33px 30px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.line {
+    flex-grow: 1;
+    border: 0.1px solid #ccc;
+    margin: 0 5px;
+}
+
+.line-text {
+    color: #ccc;
+    padding: 0 5px;
+}
+
+button.api-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    height: auto;
+    background-color: #fff;
+    border: none;
+}
+
+button.api-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    height: auto;
+    background-color: #fff; 
+    border: none; 
+    margin-bottom: 15px; 
+}
+
+button.api-social-btn img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+}
+
+button.api-social-btn.facebook {
+    background-color: #395398;
+    border: 0.1px solid #395398;
+    color: #fff;
+}
+
+button.api-social-btn.google {
+    border: 0.1px solid;
+    color: #000;
+}
+
+button.api-social-btn.apple {
+    border: 0.1px solid #000;
+    color: #000;
+}
+
+.api-social-label {
+    font-family: UOLtext;
+    font-size: 14px;
+    line-height: 20.14px;
+}
+
+.space-between-form-footer {
+    height: 50px;
+}
+
+.footer-form-single-step {
+    text-align: center;
+    color: #ccc;
+    padding-bottom: 10px;
+}
+
+.footer-form-single-step p {
+    margin-bottom: 10px;
+}
+
+.footer-form-single-step .footer-action-links {
+    margin-top: 10px;
+}
+
+.footer-form-single-step .footer-action-links a {
+    color: #0070ab;
+    text-decoration: none;
+    margin: 0 5px;
+    font-family: "UOLText";
+    font-size: 14px;
+    cursor: pointer; 
+}
+
+.footer-form-single-step .footer-action-links a:hover {
+    text-decoration: underline; 
 }
