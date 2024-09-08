@@ -140,13 +140,14 @@ a {
 
 .line {
     flex-grow: 1;
-    border: 0.1px solid #ccc;
+    border: 0.1px solid #e6e6e6;
     margin: 0 5px;
 }
 
 .line-text {
-    color: #ccc;
+    color: #666;
     padding: 0 5px;
+    font-size: 18px;
 }
 
 button.api-social-btn {
@@ -212,6 +213,8 @@ button.api-social-btn.apple {
 
 .footer-form-single-step p {
     margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
 }
 
 .footer-form-single-step .footer-action-links {
@@ -222,8 +225,8 @@ button.api-social-btn.apple {
     color: #0070ab;
     text-decoration: none;
     margin: 0 5px;
-    font-family: "UOLText";
-    font-size: 14px;
+    font-family: "Arial";
+    font-size: 13px;
     cursor: pointer; 
 }
 
