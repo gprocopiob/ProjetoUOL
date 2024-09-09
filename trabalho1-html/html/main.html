@@ -11,83 +11,115 @@
 </head>
 
 <body>
-
     <header>
-        <div class="menu">
-            <button class="btn-menu"><i class="fas fa-bars"></i></button>
-        </div>
-        <div class="logo">
-            <img class="uol_icon" src="https://logodownload.org/wp-content/uploads/2018/09/uol-logo-5-2048x732.png">
-        </div>
-        <ul>
-            <li>
-                <a
-                    href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
-            </li>
-            <li>
-                <a href="https://noticias.uol.com.br/eleicoes/">Eleições</a>
-            </li>
-            <li>
-                <a href="https://www.uol.com.br/play/ao-vivo/canal-uol/">Canal UOL</a>
-            </li>
-            <li>
-                <a href="https://noticias.uol.com.br/blogs-e-colunas/">Colunas</a>
-            </li>
-        </ul>
-        <div class="buttons">
-            <ul>
-                <li class="lista-buttons">
-                    <button class="btn-nav">SAC</button>
-                </li>
-                <li class="lista-buttons">
-                    <button class="btn-nav"><i class="fas fa-envelope"></i>EMAIL</button>
-                </li>
-                <li class="lista-buttons">
-                    <button id="btn-entre" class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
-                    <script>
-                        document.getElementById("btn-entre").onclick = function () {
-                            window.location.href = "login.html"; // Substitua "login.html" pelo caminho correto da página de login
-                        };
-                    </script>
-                </li>
-                <li class="lista-buttons">
-                    <button class="btn-assine"><i class="fas fa-crown"></i>ASSINE UOL</button>
-                </li>
-            </ul>
-        </div>
+        <div class="container">
+            <div class="menu">
+                <button class="btn-menu"><i class="fas fa-bars"></i></button>
+                <div class="content-menu">
+                    <ul class="menu-dropdown">
+                        <li class="menu-lista">
+                            <a class="menu-dropdown-item" href="">Colunas</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Cotidiano</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Educação</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Eleições</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Internacional</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Previsão do tempo</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Saúde</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <img class="uol_icon" src="https://logodownload.org/wp-content/uploads/2018/09/uol-logo-5-2048x732.png">
+                </div>
+                <ul>
+                    <li>
+                        <a class="item" href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://noticias.uol.com.br/eleicoes/">Eleições</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://www.uol.com.br/play/ao-vivo/canal-uol/">Canal UOL</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://noticias.uol.com.br/blogs-e-colunas/">Colunas</a>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <ul>
+                        <li class="lista-buttons">
+                            <button class="btn-nav">SAC</button>
+                        </li>
+                        <li class="lista-buttons">
+                            <button class="btn-nav"><i class="fas fa-envelope"></i>EMAIL</button>
+                        </li>
+                        <li class="lista-buttons">
+                            <button id="btn-entre" class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
+                            <script>
+                                document.getElementById("btn-entre").onclick = function () {
+                                    window.location.href = "login.html"; // Substitua "login.html" pelo caminho correto da página de login
+                                };
+                            </script>
+                        </li>
+                        <li class="lista-buttons">
+                            <button class="btn-assine"><i class="fas fa-crown"></i>ASSINE UOL</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
     </header>
-    <div>
-        <h1>Notícias</h1>
-    </div>
-    <div class="cinza">
-        <div class="AnuncioPrincipal">
-            <h2>São Paulo oscila, mas bate Vitória com time misto e golaço de jovem de 18 anos</h2>
-            <p>Juca Kfouri: Noite de dois golaços no Morumbis</p>
-            <p>Veja a classificação do Campeonato Brasileiro</p>
+    <section class="noticias">
+        <div>
+            <h1>Notícias</h1>
         </div>
-    </div>
-    <div class="espacamento">
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+        <div class="cinza">
+            <div class="container">
+                <div class="AnuncioPrincipal">
+                    <h2>São Paulo oscila, mas bate Vitória com time misto e golaço de jovem de 18 anos</h2>
+                    <div class="AnuncioSecundario">
+                        <p>Juca Kfouri: Noite de dois golaços no Morumbis</p>
+                        <p>Veja a classificação do Campeonato Brasileiro</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+        <div class="container">
+            <div class="noticias-itemns">
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
+                    <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
+                    <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
+                    <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
+                    <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
+                </div>
+            </div>
         </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-    </div>
+    </section>
 </body>
-
 </html>
