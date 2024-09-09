@@ -7,87 +7,169 @@
     <title>UOL Notícias</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <!-- https://fontawesome.com/icons site dos icones -->
 </head>
-
 <body>
-
     <header>
-        <div class="menu">
-            <button class="btn-menu"><i class="fas fa-bars"></i></button>
+        <div class="container">
+            <div class="header">
+                <button class="btn-menu"><i class="fas fa-bars"></i></button>
+                <div class="content-menu">
+                    <ul class="menu-dropdown">
+                        <li class="menu-lista">
+                            <a class="menu-dropdown-item" href="">Colunas</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Cotidiano</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Educação</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Eleições</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Internacional</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Previsão do tempo</a>
+                        </li>
+                        <li class="menu-lista"></li>
+                            <a class="menu-dropdown-item" href="">Saúde</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <img class="uol_icon" src="https://logodownload.org/wp-content/uploads/2018/09/uol-logo-5-2048x732.png">
+                </div>
+                <ul>
+                    <li>
+                        <a class="item" href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://noticias.uol.com.br/eleicoes/">Eleições</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://www.uol.com.br/play/ao-vivo/canal-uol/">Canal UOL</a>
+                    </li>
+                    <li>
+                        <a class="item" href="https://noticias.uol.com.br/blogs-e-colunas/">Colunas</a>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <ul>
+                        <li class="lista-buttons">
+                            <button class="btn-nav">SAC</button>
+                        </li>
+                        <li class="lista-buttons">
+                            <button class="btn-nav"><i class="fas fa-envelope"></i>EMAIL</button>
+                        </li>
+                        <li class="lista-buttons">
+                            <button id="btn-entre" class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
+                            <script>
+                                document.getElementById("btn-entre").onclick = function () {
+                                    window.location.href = "login.html"; // Substitua "login.html" pelo caminho correto da página de login
+                                };
+                            </script>
+                        </li>
+                        <li class="lista-buttons">
+                            <button class="btn-assine"><i class="fas fa-crown"></i>ASSINE UOL</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </header>
+    <section class="noticias">
+        <div>
+            <h1>Notícias</h1>
         </div>
-        <div class="logo">
-            <img class="uol_icon" src="https://logodownload.org/wp-content/uploads/2018/09/uol-logo-5-2048x732.png">
+        <div class="cinza">
+            <div class="container">
+                <div class="AnuncioPrincipal">
+                    <h2>Maduro suspende o cerco, mas ainda controla acesso à embaixada</h2>
+                    <div class="AnuncioSecundario">
+                        <p>'Continuaremos a luta', diz opositor de Maduro exilado na Espanha</p>
+                        <p>Lula faz reunião de emergência sobre Venezuela, e governo admite 'tensão'</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul>
-            <li>
-                <a
-                    href="https://www.uol.com.br/esporte/olimpiadas/quadro-de-medalhas-das-paralimpiadas/">Paralimpíadas</a>
-            </li>
-            <li>
-                <a href="https://noticias.uol.com.br/eleicoes/">Eleições</a>
-            </li>
-            <li>
-                <a href="https://www.uol.com.br/play/ao-vivo/canal-uol/">Canal UOL</a>
-            </li>
-            <li>
-                <a href="https://noticias.uol.com.br/blogs-e-colunas/">Colunas</a>
-            </li>
-        </ul>
-        <div class="buttons">
-            <ul>
-                <li class="lista-buttons">
-                    <button class="btn-nav">SAC</button>
-                </li>
-                <li class="lista-buttons">
-                    <button class="btn-nav"><i class="fas fa-envelope"></i>EMAIL</button>
-                </li>
-                <li class="lista-buttons">
-                    <button id="btn-entre" class="btn-nav"><i class="fas fa-user"></i>ENTRE</button>
-                    <script>
-                        document.getElementById("btn-entre").onclick = function () {
-                            window.location.href = "login.html"; // Substitua "login.html" pelo caminho correto da página de login
-                        };
-                    </script>
-                </li>
-                <li class="lista-buttons">
-                    <button class="btn-assine"><i class="fas fa-crown"></i>ASSINE UOL</button>
-                </li>
+        <div class="container">
+            <div class="noticias-itemns">
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/esporte/c9/2024/09/08/isabela-e-bruna-calderan-em-acao-durante-jogo-entre-corinthians-e-palmeiras-pelo-brasileirao-feminino-1725828957291_v2_300x225.jpg.webp">
+                    <h5>Palmeiras vence o Dérbi, mas Corinthians vai à 8ª final consecutiva do Brasileirão feminino</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/noticias/02/2024/08/09/vista-aerea-dos-destrocos-de-um-aviao-que-caiu-com-61-pessoas-a-bordo-em-vinhedo-estado-de-sao-paulo-1723240990126_v2_300x225.jpg.webp">
+                    <h5>Animação da FAB mostra alarmes e manobras do avião da Voepass antes da queda</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images" src="">
+                    <h5>Candidatos em SP lamentam morte de PM que caiu de cavalo antes do desfile de 7/9</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/home/25/2024/09/08/jincheng-guo-nadador-chines-da-classe-s5-das-paralimpiadas-1725781484251_300x225.jpg.webp">
+                    <h5>Chinês faz escudo com bolha de ar e derruba recordes na natação paralímpica </h5>
+                </div>
+            </div>    
+            <div class="noticias-itemns">    
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/esporte/af/2024/09/08/fernando-rufino-ouro-e-igor-tofalini-prata-no-podio-dos-200m-na-classe-vl2-nas-paralimpiadas-de-paris-1725812076262_v2_300x225.jpg.webp">
+                    <h5>Brasil bate recorde de ouros e pódios e festeja a melhor campanha da história paralímpica</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/esporte/da/2024/09/08/ferroviaria-e-sao-paulo-se-enfrentaram-pelo-jogo-de-volta-da-semifinal-do-brasileirao-feminino-1725825607790_v2_300x225.jpg.webp">
+                    <h5>Goleira pega três pênaltis e põe São Paulo na final do Brasileirão feminino</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/entretenimento/57/2024/01/04/gusttavo-lima-1704384821059_v2_300x225.jpg.webp">
+                    <h5>Justiça bloqueou R$ 20 milhões, bens e imóveis de empresa de Gusttavo Lima, diz TV</h5>
+                </div>
+                <div class="image-ajuste">
+                    <img class="images"
+                        src="https://conteudo.imguol.com.br/c/entretenimento/0e/2024/09/07/fabio-arruda-morreu-aos-54-anos-1725761188123_v2_300x225.jpg.webp">
+                    <h5>Fábio Arruda será velado em SP; consultor foi encontrado morto em casa, aos 54 anos</h5>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="sites-parceiros">
+        <div class="container">
+            <h4>Sites parceiros</h4>
+            <ul class="buttons-sites-parceiros">
+                <li class="li-btn-site-par"><button class="btn-site-par">Band</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">Congresso em Foco</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">Cultura</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">Folha de S.Paulo</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">Lupa</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">MediaTalks</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">NE10</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">RedeTV!</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">Tempo Agora</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">TN Online</button></li>
+                <li class="li-btn-site-par"><button class="btn-site-par">MidiaMax</button></li>
             </ul>
         </div>
-    </header>
-    <div>
-        <h1>Notícias</h1>
-    </div>
-    <div class="cinza">
-        <div class="AnuncioPrincipal">
-            <h2>São Paulo oscila, mas bate Vitória com time misto e golaço de jovem de 18 anos</h2>
-            <p>Juca Kfouri: Noite de dois golaços no Morumbis</p>
-            <p>Veja a classificação do Campeonato Brasileiro</p>
-        </div>
-    </div>
-    <div class="espacamento">
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-        <div class="image-ajuste">
-            <img class="images"
-                src="https://conteudo.imguol.com.br/c/noticias/70/2024/08/21/bayesian-1724256349914_v2_750x1.png.webp">
-            <h5>Ministros do STF divergem de Moraes no bloqueio às contas da Starlink</h5>
-        </div>
-    </div>
+    </section>
 </body>
-
+<footer>
+    <!-- <div class="footer-content">
+        <div class="container">
+            <img class="uol_icon_footer" src="https://logodownload.org/wp-content/uploads/2018/09/uol-logo-5-2048x732.png">
+            <div class="share">
+                <p>Siga UOL Notícias</p>
+                <div class="redes-sociais">
+                </div>
+            </div>
+        </div>  
+    </div> -->
+    <p class="creditos">1996 - 2024 UOL - O melhor conteúdo. Todos os direitos reservados - Segurança e privacidade</p> 
+</footer>
 </html>
