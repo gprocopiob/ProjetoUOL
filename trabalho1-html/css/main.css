@@ -1,3 +1,5 @@
+/* --------- geral ---------*/
+
 * {
     list-style: none;
     margin: 0;
@@ -21,6 +23,27 @@
     margin-left: auto;
 }
 
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-right: 32px;
+    color: #000;
+}
 /* --------- header bar ---------*/
 header {
     margin-bottom: 25px;
@@ -35,8 +58,15 @@ header {
     flex-grow: 0;
 }
 
-.menu{
+i{
+    margin-right: 0.5em;
+}
+
+.header{
+    width: 100%;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-menu{
@@ -49,20 +79,8 @@ header {
     display: none;
 }
 
-.menu-dropdown-item{
-    display: none;
-}
-
 .menu-dropdown-item:hover{
     color:rgb(122, 85, 255);
-}
-
-.menu:hover .menu-dropdown-item{
-    display: block;
-}
-
-.menu:hover .noticias{
-    background-color: #00000032 !important;
 }
 
 .uol_icon{
@@ -76,30 +94,9 @@ header {
     flex: 1;
 }
 
-ul {
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    font-size: 16px;
-}
-
-li {
-    display: inline;
-    white-space: nowrap;
-    font-size: 0.8em;
-    font-weight: 400;
-    margin-right: 32px;
-    color: #000;
-}
-
 .lista-buttons{
     margin-left: 6px;
     margin-right: 0px;
-}
-
-a {
-    text-decoration: none;
-    color: #666;
 }
 
 .item{
@@ -111,15 +108,15 @@ a {
     color: #ca1b47;
 }
 
-i{
-    margin-right: 0.5em;
+.buttons{
+    align-items: center;
+    justify-content: right;
 }
-
 
 button{
     background-color: white;
     border: none;
-    font-weight: 700;
+    font-weight: 500;
     margin: 1px;
     cursor: pointer;
 }
@@ -127,6 +124,11 @@ button{
 .btn-menu{
     font-size: 1em;
 }
+
+.btn-menu:focus .content-menu{
+    display: block;
+}
+
 
 .btn-assine{
     background-color: rgb(255, 208, 0);
@@ -189,7 +191,6 @@ p{
 }
 
 /* --------- imagens  ---------*/
-
 .noticias-itemns {   
     display: flex;
     justify-content: space-around;
