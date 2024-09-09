@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscreva-se</title>
     <link rel="stylesheet" type="text/css" href="../css/cadastro.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="product-logo">
-                <h1><img class="productLogo noselect" src="https://imguol.com/p/pp/logos/cadastro/uol.png"></h1>
+                <h1><img src="https://imguol.com/p/pp/logos/cadastro/uol.png"></h1>
             </div>
             <div class="secure-website-uol">Site seguro UOL</div>
         </div>
@@ -32,7 +30,6 @@
                 <input type="password" class="form-control password-input">
                 <img src="../images/senha.png" alt="Ícone de senha" class="password-icon">
             </div>
-
             <div class="espaco-entre-componentes"></div>
             <p class="label">Nome completo</p>
             <input type="text" class="form-control">
@@ -74,15 +71,11 @@
                 </div>
                 <input type="text" class="control-box">
                 <div class="aceite">Aceitamos:</div>
-                <span ng-repeat="creditCard in creditCardList" class="acceptedBoxBrand icon-visa" title=""
-                    alt=""></span>
-                <span ng-repeat="creditCard in creditCardList" class="acceptedBoxBrand icon-mastercard" title=""
-                    alt=""></span>
-                <span ng-repeat="creditCard in creditCardList" class="acceptedBoxBrand icon-hipercard" title=""
-                    alt=""></span>
-                <span ng-repeat="creditCard in creditCardList" class="acceptedBoxBrand icon-elo" title="" alt=""></span>
-                <span ng-repeat="creditCard in creditCardList" class="acceptedBoxBrand icon-american" title=""
-                    alt=""></span>
+                <span class="acceptedBoxBrand icon-visa"></span>
+                <span class="acceptedBoxBrand icon-mastercard"></span>
+                <span class="acceptedBoxBrand icon-hipercard"></span>
+                <span class="acceptedBoxBrand icon-elo"></span>
+                <span class="acceptedBoxBrand icon-american"></span>
             </div>
         </form>
     </div>
