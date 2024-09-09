@@ -1,54 +1,127 @@
-/* --------- header bar ---------*/
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.body{
+    padding: 0% 13% 0% 13%;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* --------- header bar ---------*/
 header {
+    margin-bottom: 25px;
+    top: 0;
+    width: 100%;
     border-bottom: 1px solid rgb(212, 212, 212);
-    height: 3em;
+    height: 4.5em;
     padding: 0% 13% 0% 13%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 0;
+}
+
+.menu{
+    display: inline-flex;
+}
+
+.content-menu{
+    background: #fff;
+    box-shadow: 4px 0 9px 0 rgba(0, 0, 0, .4);
+    height: calc(100vh - 137px);
+    padding: 15px 20px;
+    position: absolute;
+    width: 270px;
+    display: none;
+}
+
+.menu-dropdown-item{
+    display: none;
+}
+
+.menu-dropdown-item:hover{
+    color:rgb(122, 85, 255);
+}
+
+.menu:hover .menu-dropdown-item{
+    display: block;
+}
+
+.menu:hover .noticias{
+    background-color: #00000032 !important;
 }
 
 .uol_icon{
-    height: 1.8em;
-}
-
-ul {
-    display: inline-flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 1em;
+    width: 100px;
+    height: 36px;
     margin-right: 5em;
 }
 
+.logo{
+    text-align: left;
+    flex: 1;
+}
+
+ul {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    font-size: 16px;
+}
+
 li {
-    margin: 0% 2% 0% 2%;
     display: inline;
     white-space: nowrap;
     font-size: 0.8em;
+    font-weight: 400;
+    margin-right: 32px;
+    color: #000;
 }
 
 .lista-buttons{
-    margin: 0%;
+    margin-left: 6px;
+    margin-right: 0px;
 }
 
-a{
+a {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #666;
+}
+
+.item{
+    color: #000;
+    font-size: 16px;
+}
+
+.item:hover{
+    color: #ca1b47;
 }
 
 i{
     margin-right: 0.5em;
 }
 
+
 button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
     background-color: white;
     border: none;
-    font-weight: 600;
+    font-weight: 700;
+    margin: 1px;
+    cursor: pointer;
 }
 
 .btn-menu{
@@ -58,74 +131,76 @@ button{
 .btn-assine{
     background-color: rgb(255, 208, 0);
     border-radius: 0.5em;
-    padding: 0.7em 1.3em 0.7em 1.3em;
-    font-size: 0.5em;
+    font-size: 10px;
+    padding: 10px 8px;
 }
 
 /* --------- corpo  ---------*/
 
-.body{
-    padding: 0% 13% 0% 13%;
-}
-
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 7px;
     font-weight: 100;
-    font-size: 35px;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 40px;
+    letter-spacing: 7px;
+    line-height: 52px;
 }
 
 .AnuncioPrincipal{
     background: rgb(34,133,255);
     background: linear-gradient(90deg, rgba(34,133,255,1) 0%, rgba(49,44,175,1) 100%);
     color: white;    
-    height: 60%;
-    padding: 3%;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 73px 0 33px;
     vertical-align: center;
     
 }
 
+.AnuncioSecundario{
+    margin-top: 14px;
+    margin-left: 4.166666666666667%;
+}
+
 h2{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 44px;
+    line-height: 49px;
+    letter-spacing: .6px;
+    margin-bottom: 10px;
+    margin-left: 4.166666666666667%;
 }
 
 p{ 
     border-left: 2px solid white;
     padding: 0px 0px 0px 10px;
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 
 .cinza{    
-    background-color: rgb(222, 222, 222);
+    background: #f2f2f2;
     height: 300px;
-    align-content: center;
-    vertical-align: center;
     display: flex;
     PADDING: 0% 13% 0% 13%;
     align-items: center;
     justify-content: center;
-
+    margin-bottom: 30px;
 }
 
 /* --------- imagens  ---------*/
-.images{
-    height: 225px;
-    width: 260px;
-}
 
-.espacamento {       
+.noticias-itemns {   
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0% 13% 0% 13%;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .image-ajuste {
     display: block;
     margin-bottom: 3%;
+    width: 280px;
+    color: #000;
 }
 
 .image-ajuste:hover {
@@ -133,14 +208,20 @@ p{
     color:rgb(122, 85, 255);
 }
 
-h5{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0px;
-    font-weight: 300;
+.images{
+    height: 210px;
+    margin-bottom: 10px;
 }
 
-.btn-nav {
-    cursor: pointer;
+img {
+    border: none;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+h5{
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 22px;
 }
