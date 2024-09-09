@@ -3,73 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UOL Notícias</title>
-    <link rel="stylesheet" type="text/css" href="../css/login.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 
 <body>
     <div id="root">
-        <div id="wrapper">
+        <div id="container">
             <div id="modal">
-                <div class="layout">
-                    <div id="CTA">
-                        <div class="CTA__logo">
-                            <img class="logo" src="https://imguol.com/p/pp/logos/cadastro/uol.png" alt="Logo UOL">
-                        </div>
-                        <p>Entre com sua conta UOL para acessar o conteúdo exclusivo</p>
-                    </div>
-                    <div id="form">
-                        <form id="form-single-step" novalidate>
-                            <h2>Entrar</h2>
-                            <div class="margin-default">
-                                <div class="form-group">
-                                    <input autocomplete="username" required name="user" placeholder="E-mail ou CPF/CNPJ"
-                                        type="email" id="user" class="input-lg form-control">
-                                </div>
-                                <span class="description-input-user"></span>
-                                <button id="button-submit" aria-label="Botão Continuar" type="submit"
-                                    class="btn btn-default btn-block">Continuar</button>
-                            </div>
-                        </form>
-                        <span>Ainda não é assinante UOL?
-                            <a aria-label="ASSINE JÁ" class="btn btn-link"
-                                href="../html/cadastro.html" title="ASSINE JÁ">ASSINE JÁ</a>
-                            <div class="line-container">
-                                <hr class="line">
-                                <span class="line-text">ou</span>
-                                <hr class="line">
-                            </div>
-                        </span>
-                        <button type="button" class="btn btn-block facebook api-social-btn">
-                            <img src="../images/logo-facebook.png" alt="Logo do Facebook"
-                                title="Continuar com o Facebook">
-                            <span class="api-social-label">Continuar com o <strong>Facebook</strong></span>
-                        </button>
-
-                        <button type="button" class="btn btn-block google api-social-btn">
-                            <img src="../images/logo-google.png" alt="Logo do Google" title="Continuar com o Google">
-                            <span class="api-social-label">Continuar com o <strong>Google</strong></span>
-                        </button>
-
-                        <button type="button" class="btn btn-block apple api-social-btn">
-                            <img src="../images/logo-apple.png" alt="Logo da Apple" title="Continuar com a Apple">
-                            <span class="api-social-label">Continuar com a <strong>Apple</strong></span>
-                        </button>
-                    </div>
+                <div id="cabecalho">
+                    <img src="https://imguol.com/p/pp/logos/cadastro/uol.png" alt="Logo UOL">
+                    <p>Entre com sua conta UOL para acessar o conteúdo exclusivo</p>
                 </div>
-            </div>                
-            <div class="space-between-form-footer"></div>
-            <footer class="hidden-xs footer-form-single-step">
+                <div id="formulario">
+                    <form id="entrada">
+                        <h2 id="entrada-h2">Entrar</h2>
+                        <input placeholder="E-mail ou CPF/CNPJ">
+                        <button id="button-continuar">Continuar</button>
+                    </form>
+                    <div id="informacao">
+                        <span>Ainda não é assinante UOL?
+                            <a href="../html/cadastro.html">ASSINE JÁ</a>
+                        </span>
+                        <div class="line-container">
+                            <hr class="line">
+                            <span class="line-text">ou</span>
+                            <hr class="line">
+                        </div>
+                    </div>
+                    <button class="btn-cadastro facebook">
+                        <img src="../images/logo-facebook.png">
+                        <span class="api-social-label">Continuar com o <strong>Facebook</strong></span>
+                    </button>
+                    <button class="btn-cadastro google">
+                        <img src="../images/logo-google.png">
+                        <span class="api-social-label">Continuar com o <strong>Google</strong></span>
+                    </button>
+                    <button class="btn-cadastro apple">
+                        <img src="../images/logo-apple.png">
+                        <span class="api-social-label">Continuar com a <strong>Apple</strong></span>
+                    </button>
+                </div>
+            </div>
+            <div class="divisor"></div>
+            <footer class="rodape">
                 <p>Sua senha é secreta.<br>Nenhum funcionário a serviço do UOL está autorizado a solicitá-la</p>
-                <div class="footer-action-links">
-                    <a aria-label="Regras de uso" rel="noopener noreferrer" target="" title="Regras de uso">Regras de uso</a>
-                    <a aria-label="Política anti-spam" rel="noopener noreferrer" target="" title="Política anti-spam">Política anti-spam</a>
-                    <a aria-label="Crimes virtuais: denuncie" rel="noopener noreferrer" target="" title="Crimes virtuais: denuncie">Crimes virtuais: denuncie</a>
+                <div class="rodape-links">
+                    <a>Regras de uso</a>
+                    <a>Política anti-spam</a>
+                    <a>Crimes virtuais: denuncie</a>
                 </div>
             </footer>
         </div>
     </div>
 </body>
+
 </html>
