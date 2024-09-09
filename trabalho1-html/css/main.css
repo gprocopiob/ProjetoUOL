@@ -1,3 +1,5 @@
+/* --------- geral ---------*/
+
 * {
     list-style: none;
     margin: 0;
@@ -21,6 +23,49 @@
     margin-left: auto;
 }
 
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-right: 32px;
+    color: #000;
+}
+
+button{
+    background: 0 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 400;
+    vertical-align: middle;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: .6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
 /* --------- header bar ---------*/
 header {
     margin-bottom: 25px;
@@ -35,8 +80,15 @@ header {
     flex-grow: 0;
 }
 
-.menu{
+i{
+    margin-right: 0.5em;
+}
+
+.header{
+    width: 100%;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-menu{
@@ -49,20 +101,8 @@ header {
     display: none;
 }
 
-.menu-dropdown-item{
-    display: none;
-}
-
 .menu-dropdown-item:hover{
     color:rgb(122, 85, 255);
-}
-
-.menu:hover .menu-dropdown-item{
-    display: block;
-}
-
-.menu:hover .noticias{
-    background-color: #00000032 !important;
 }
 
 .uol_icon{
@@ -76,30 +116,9 @@ header {
     flex: 1;
 }
 
-ul {
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    font-size: 16px;
-}
-
-li {
-    display: inline;
-    white-space: nowrap;
-    font-size: 0.8em;
-    font-weight: 400;
-    margin-right: 32px;
-    color: #000;
-}
-
 .lista-buttons{
     margin-left: 6px;
     margin-right: 0px;
-}
-
-a {
-    text-decoration: none;
-    color: #666;
 }
 
 .item{
@@ -111,28 +130,26 @@ a {
     color: #ca1b47;
 }
 
-i{
-    margin-right: 0.5em;
-}
-
-
-button{
-    background-color: white;
-    border: none;
-    font-weight: 700;
-    margin: 1px;
-    cursor: pointer;
+.buttons{
+    align-items: center;
+    justify-content: right;
 }
 
 .btn-menu{
     font-size: 1em;
 }
 
+.btn-menu:focus .content-menu{
+    display: block;
+}
+
+
 .btn-assine{
     background-color: rgb(255, 208, 0);
     border-radius: 0.5em;
     font-size: 10px;
     padding: 10px 8px;
+    font-weight: 700;
 }
 
 /* --------- corpo  ---------*/
@@ -189,7 +206,6 @@ p{
 }
 
 /* --------- imagens  ---------*/
-
 .noticias-itemns {   
     display: flex;
     justify-content: space-around;
@@ -224,4 +240,80 @@ h5{
     font-weight: 400;
     line-height: 30px;
     font-size: 22px;
+}
+
+/* --------- sites parceiros  ---------*/
+.sites-parceiros{
+    margin-bottom: 50px;
+    padding: 54px 0 70px;
+    background: rgba(204, 204, 204, .3);
+    position: relative;
+}
+
+h4{
+    color: #666;
+    font-weight: 100;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.buttons-sites-parceiros{
+
+    position: relative;
+    width: 100%;
+    display: table;
+}
+
+.li-btn-site-par{
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.btn-site-par{
+    background-color: transparent;
+    background: rgba(204, 204, 204, .08);
+    border: 1px solid rgba(204, 204, 204, .5);
+    font-weight: 300;
+    text-transform: none;
+    color: #2E48FF;
+    font-size: 16px;
+    padding: 8px 15px;
+    line-height: 12px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+}
+
+/* --------- footer ---------*/
+.footer-content{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.uol_icon_footer{
+    width: 85px;
+}
+
+.share{
+    margin-right: 20px;
+    float: right;
+    width: 85%;
+    font-size: 13px;
+}
+
+.creditos{
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    height: 68px;
+    line-height: 56px;
 }
