@@ -1,0 +1,132 @@
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+#container {
+    width: 376px;
+}
+
+#modal {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#cabecalho {
+    padding: 15px 33px 10px;
+}
+
+#formulario {
+    width: 83%;
+    padding: 0 33px 15px 33px;
+}
+
+#entrada{
+    margin: 0;
+}
+
+#entrada-h2 {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+#button-continuar {
+    width: 100%;
+    background-color: rgb(255, 206, 0);
+    color: rgb(32, 32, 32);
+    margin-bottom: 30px 0;
+    padding: 7px 97px;
+    border-radius: 2px;
+    border-color: rgb(255, 206, 0);;
+    cursor: pointer;
+}
+
+#informacao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #0070ab;
+    text-decoration: none;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex-grow: 1;
+    border: 0.1px solid #e6e6e6;
+    margin: 0 10px;
+}
+
+.line-text {
+    color: #666;
+    font-size: 18px;
+}
+
+button.btn-cadastro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+button.btn-cadastro img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+button.btn-cadastro.facebook {
+    background-color: #395398;
+    border-color: #395398;
+    color: #fff;
+}
+
+button.btn-cadastro.google,
+button.btn-cadastro.apple {
+    border-color: #000;
+    color: #000;
+}
+
+.api-social-label {
+    font-size: 14px;
+}
+
+.divisor {
+    height: 50px;
+}
+
+.rodape {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.rodape-links a {
+    color: #0070ab;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer; 
+}
