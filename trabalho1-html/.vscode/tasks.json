@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",  // Tipo da Task: comando de shell
+        "command": "gcc",  // Comando que será executado (GCC)
+        "args": [
+          "-S",             // Instrução para gerar código Assembly
+          "-masm=intel",    // Gera o Assembly no formato Intel
+          "-o", "${fileDirname}/${fileBasenameNoExtension}.s",  // Define o arquivo de saída (.s)
+          "${file}"         // O arquivo C atual no editor
+        ],
+        "group": {
+          "kind": "build",  // Define que é uma task de "build"
+          "isDefault": true // Define como a task padrão
+        },
+        "problemMatcher": ["$gcc"]  // Detecta erros e os exibe no VSCode
+      }
+    ]
+  }
