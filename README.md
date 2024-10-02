@@ -29,3 +29,20 @@ Para executar a aplicação localmente, você precisará:
 
 1. Um navegador web para visualizar as páginas HTML.
 2. Conexão com a internet para carregar o Font Awesome e qualquer imagem externa utilizada.
+
+## Documentação
+### Problemas e Funcionalidades
+Os problemas e funcionalidades do projeto são rastreados através de issues.
+
+### Documentação do Código
+Os principais arquivos HTML e CSS estão documentados com comentários no código-fonte para facilitar a compreensão e manutenção.
+
+## Pull Request e Processo de Merge
+
+- Todo o código na branch main deve ser mesclado a partir da develop via Pull Requests.
+- Não é permitido realizar commits diretamente na branch main.
+- Issues devem ser vinculadas aos commits.
+- 
+## Releases
+
+As releases são geradas sempre que a branch `develop` é estabilizada e suas alterações são mescladas à branch `main`, garantindo que o código na `main` esteja sempre pronto para produção. Cada release é revisada, documentada e versionada.
