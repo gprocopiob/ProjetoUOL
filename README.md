@@ -42,7 +42,7 @@ Os principais arquivos HTML e CSS estão documentados com comentários no códig
 - Todo o código na branch main deve ser mesclado a partir da develop via Pull Requests.
 - Não é permitido realizar commits diretamente na branch main.
 - Issues devem ser vinculadas aos commits.
-- 
+
 ## Releases
 
 As releases são geradas sempre que a branch `develop` é estabilizada e suas alterações são mescladas à branch `main`, garantindo que o código na `main` esteja sempre pronto para produção. Cada release é revisada, documentada e versionada.
